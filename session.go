@@ -51,4 +51,5 @@ type Connection interface {
 	Session
 	RegSequence(table exp.IdentifierExpression) error
 	GetSequence(table exp.IdentifierExpression) (*Sequence, error)
+	DB() *sql.DB
 }
